@@ -97,12 +97,20 @@ svg{
 
 .line{
     position: relative;
+    height: 40px;
     width: 100%;
     filter: url(#wavy) blur(0.5px);
-    transition: .6s;
 }
 .line:hover::before{
-    transition: .6s;
+    transition: 1s;
+    top:70px;
+    left: 70px;
+    right: 70px;
+    bottom: 70px;
+    animation: animate2 0.5s linear infinite;
+}
+.line:hover::after{
+    transition: 1s;
     top:70px;
     left: 70px;
     right: 70px;
@@ -118,7 +126,7 @@ svg{
     bottom: 80px;
     border: 20px solid #fff;
     border-radius: 50%;
-    transition: .6s;
+    transition: 1s;
 }
 .line:after{
     content:'';
